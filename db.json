@@ -1,0 +1,84 @@
+{
+    "products": [
+      {
+      "id": 1,
+      "title": "Cococnut Chocolate",
+      "price": 50.01,
+      "inventory": 2,
+      "image": "https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateBarBlack_61858ada-bdd2-49c2-b280-4d4df44e7dce_1024x.jpg?v=1622177517",
+      "detail": "This is product detail line.This is product detail line.This is product detail line.This is product detail line."
+    },
+      {
+        "id": 2,
+        "title": "Mint Chocolate",
+        "price": 45.99,
+        "inventory": 10,
+        "image": "https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateBarBlack_61858ada-bdd2-49c2-b280-4d4df44e7dce_1024x.jpg?v=1622177517",
+        "detail": "This is product detail line.This is product detail line.This is product detail line.This is product detail line."
+      },
+      {
+        "id": 3,
+        "title": "Caramel Chocolate",
+        "price": 40.99,
+        "inventory": 20,
+        "image": "https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateBarBlack_61858ada-bdd2-49c2-b280-4d4df44e7dce_1024x.jpg?v=1622177517",
+        "detail": "This is product detail line.This is product detail line.This is product detail line.This is product detail line."
+      },
+      {
+        "id": 4,
+        "title": "Lime Chocolate",
+        "price": 30.99,
+        "inventory": 15,
+        "image": "https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateBarBlack_61858ada-bdd2-49c2-b280-4d4df44e7dce_1024x.jpg?v=1622177517",
+        "detail": "This is product detail line.This is product detail line.This is product detail line.This is product detail line."
+      },
+      {
+        "id": 5,
+        "title": "Sweet Pepper Chocolate",
+        "price": 29.99,
+        "inventory": 5,
+        "image": "https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateBarBlack_61858ada-bdd2-49c2-b280-4d4df44e7dce_1024x.jpg?v=1622177517",
+        "detail": "This is product detail line."
+      },
+      {
+        "id": 6,
+        "title": "Lavender Chocolate",
+        "price": 29.99,
+        "inventory": 12,
+        "image": "https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateBarBlack_61858ada-bdd2-49c2-b280-4d4df44e7dce_1024x.jpg?v=1622177517",
+        "detail": "This is product detail line."
+      },
+      {
+        "id": 7,
+        "title": "Yoghurt Chocolate",
+        "price": 29.99,
+        "inventory": 55,
+        "image": "https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateBarBlack_61858ada-bdd2-49c2-b280-4d4df44e7dce_1024x.jpg?v=1622177517",
+        "detail": "This is product detail line."
+      },
+      {
+        "id": 8,
+        "title": "Cheese Chocolate",
+        "price": 29.99,
+        "inventory": 15,
+        "image": "https://cdn.shopify.com/s/files/1/0420/8669/5079/products/ChocolateBarBlack_61858ada-bdd2-49c2-b280-4d4df44e7dce_1024x.jpg?v=1622177517",
+        "detail": "This is product detail line."
+      },
+      {
+        "id": 1,
+        "title": "json-server",
+        "author": "typicode"
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "body": "some comment",
+        "postId": 1
+      }
+    ],
+    "profile": {
+      "name": "typicode"
+    }
+  }
+  
