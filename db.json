@@ -70,10 +70,25 @@
         "author": "typicode"
       }
     ],
-    "comments": [
+    "brands": [
       {
         "id": 1,
-        "body": "some comment",
+        "body": "Brand One",
+        "postId": 1
+      },
+      {
+        "id": 2,
+        "brandName": "Brand Two",
+        "postId": 1
+      },
+      {
+        "id": 3,
+        "brandName": "Brand Three",
+        "postId": 1
+      },
+      {
+        "id": 4,
+        "brandName": "some comment",
         "postId": 1
       }
     ],

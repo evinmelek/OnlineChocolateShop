@@ -1,6 +1,13 @@
 # chocolate-shop
+*list item italic
+ **bold
+ ***bolditalic
 
-## Project setup
+ -- list item1
+ -- list item2
+ link => [aciklama](https://linkurl.com)
+  img => ![aciklama](https://linkurl.com)
+ ## Project setup
 ```
 npm install
 ```
@@ -22,3 +29,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Use and waych db.json file as fake REST API
+```
+json-server --watch db.json
+```

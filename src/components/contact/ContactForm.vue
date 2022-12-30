@@ -1,29 +1,29 @@
 <template>
   <div>
-    <h1>Contact with Us</h1>
+    <h1 class="contact-header">Contact with Us</h1>
     <div class="contact-form">
-        <div class="input-space">
-          <h3>Email</h3><input type="text" maxlength="24">
+        <div class="contact-input-space">
+          <h3 class="contact-input-header">Email</h3><input type="text" maxlength="24" id="#contact-input">
         </div>
-        <div class="input-space">
-           <h3>Adress</h3><input type="text" maxlength="24"/>
+        <div class="contact-input-space">
+           <h3 class="contact-input-header">Adress</h3><input type="text" maxlength="24" id="#contact-input"/>
         </div>
-        <div class="input-space">
-           <h3>Your Message</h3> <textarea type="text" minlength="128" maxlength="512"></textarea>
+        <div class="contact-input-space">
+           <h3 class="contact-input-header">Your Message</h3> <textarea type="text" minlength="128" maxlength="512" id="#contact-message-input"></textarea>
         </div>
         <button class="form-button">Send</button>
     </div>
     <br/>
     <div class="contact-info">
-        <h2>Tel:</h2>
-        <p>{{telephone}}</p>
-        <h2>E-mail:</h2>
-        <p>{{email}}</p>
-        <h2>Whatsapp:</h2>
-        <p>{{whatsapp}}</p>
-        <a>Working Hours:(every day) 09:00 - 19:00</a>
-        <h2>Our Address:</h2>
-        <p>{{address}}</p>
+        <h2 class="info-header">Tel:</h2>
+        <p class="info">{{telephone}}</p>
+        <h2 class="info-header">E-mail:</h2>
+        <p class="info">{{email}}</p>
+        <h2 class="info-header">Whatsapp:</h2>
+        <p class="info">{{whatsapp}}</p>
+        <a class="info-a">Working Hours:(every day) 09:00 - 19:00</a>
+        <h2 class="info-header">Our Address:</h2>
+        <p class="info">{{address}}</p>
     </div>
   </div>
 </template>
@@ -43,40 +43,40 @@ export default {
 </script>
 
 <style> 
-h1{
+.contact-header{
     float: center; 
     margin-top: 10%;
     color: brown;
     text-shadow: 1px 2px 4px chocolate;
 }
 
-h3, h2 {
+.info-header, .contact-input-header {
     float: left; 
     width: 51%;  
     text-align: left;
 }
 
-p {
+.info {
     float: left;
     text-align: right;
     margin: 2% ;
     width: 25%;
 }
 
-a{
+.info-a{
     padding: 1%; 
     font-style: italic;
     font-size: 96%;
 }
 
-input{
+.contact-input{
     padding: 2%;
     width: 100%; 
     border: 1px solid peru;
     border-radius: 10px; 
 }
 
-textarea {
+.contact-message-input {
     width: 100%;
     min-height: 100px;
     border: 1px solid peru;
@@ -94,7 +94,7 @@ textarea {
     background-color: whitesmoke;
 }
 
-.input-space{
+.contact-input-space{
     float: center;
     margin: 1%;
     height: 30%;

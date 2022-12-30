@@ -1,21 +1,25 @@
 <template>
   <div>
     <HeaderComponent></HeaderComponent>
-    <div class="content">
-      <div class="cart">
+    <div class="cart-content">
+      <div class="cart-inside">
         <ul class="cart-products" v-for="product in products" :key="product.id">
-          <li class="cart-product">
+          <li class="cart-each-product">
             <img :src="product.image" class="cart-product-img" />
-            <router-link to="/product" class="card-product-title">{{product.title}}</router-link>
-            <p class="card-product-price">{{ product.price }} TL</p>  
-            <button class="plus-button">+</button>
-            <span class="product-amount">{{product.quantity}}</span>
-            <button class="minus-button">-</button> 
+            <router-link to="/product" class="cart-product-title">{{product.title}}</router-link>
+            <p class="cart-product-price">{{ product.price }} TL</p>  
+            <button class="cart-plus-button">+</button>
+            <span class="cart-product-amount">{{product.quantity}}</span>
+            <button class="cart-minus-button">-</button> 
           </li>  
         </ul>
       </div>      
     </div>  
-    <button class="checkout-button">Checkout</button>
+    <div class="checkout">
+      <h3>Total</h3>
+      <p>{{total}} TL</p>
+      <button class="checkout-button">Checkout</button>
+    </div>
     <FooterComponent></FooterComponent>
   </div>
 </template>
@@ -55,37 +59,38 @@ export default {
 </script>
 
 <style> 
-.cart {
-  height: auto; 
-  width: 100%;  
-}
-
-.content{
-  height: 75%;
-  width: 70%;
-  margin-top: 5%;
-  margin-left: 5%; 
-  border-radius: 20px;
-  overflow-y: scroll; 
+.cart-content{
+  height: 80%;
+  width: 66%;  
+  float: left; 
+  margin-left: 1%; 
+  margin-top: 4.7%;
+  overflow-x: hidden; 
   position: absolute;
+  border-radius: 50px 5px 5px 50px;
   background-color: antiquewhite ;
 }
+
+.cart-inside {
+  height: 100%; 
+  width: 90%;  
+  float: center;
+  margin: 0%;  
+} 
 
 .cart-products {
   margin: 2%;
   float: center;
-  padding: 1%;
-  width: 80%;
-  height: 80%;
+  padding: 1%; 
   list-style-type: none;
 }
 
-.cart-product {
+.cart-each-product {
   border: 1px solid peru;
   float: left;
   width: 100%;
   height: 20%;
-  margin: 0.6%;
+  margin: 1%;
 }
  
  .cart-product-img {
@@ -95,15 +100,16 @@ export default {
   float: left;
  }
  
- .card-product-title { 
+ .cart-product-title { 
   width: 30%;
   border-radius: 0;
   float: left;
   margin: 2.5%;
   text-decoration: none;
+  color: brown;
  }
 
- .card-product-price { 
+ .cart-product-price { 
   width: 10%;
   border-radius: 0;
   float: left;
@@ -115,7 +121,7 @@ export default {
   padding: 1%;
 }
 
-.plus-button, .minus-button {
+.cart-plus-button, .cart-minus-button {
   background-color: brown;
   color: antiquewhite;
   padding: 1%;
@@ -125,13 +131,23 @@ export default {
   border-radius: 10%;
 }
 
+.checkout{
+  height: 40%;
+  width: 30%;
+  top: 20%;
+  right: 1%;
+  position: absolute; 
+  font-size: 180%;
+  border: 1px solid silver;
+}
+
 .checkout-button {
-  padding: 1.6%;
-  font-size: 120%;
-  border-radius: 20px;
+  margin: 2%;
+  padding: 5%;
+  border-radius: 10px;
   border: 1px solid brown;
   background-color: brown;
-  color: antiquewhite;   
-  float: right;
+  color: antiquewhite;    
+  font-size: 80%;
 }
 </style>

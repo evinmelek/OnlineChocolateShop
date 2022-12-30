@@ -2,7 +2,7 @@
   <div>
     <HeaderComponent></HeaderComponent>
     <NavbarComponent></NavbarComponent> 
-    <ContactForm class="form"></ContactForm>
+    <ContactForm></ContactForm>
     <FooterComponent></FooterComponent>
   </div>
 </template>

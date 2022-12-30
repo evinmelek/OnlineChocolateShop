@@ -1,6 +1,6 @@
 <template>
    <div class="aside">
-      <menu class="aside-menu"><a class="material-icons" @click="isHidden = !isHidden">menu</a></menu>
+      <menu class="aside-menu"><a class="material-icons aside-icon" @click="isHidden = !isHidden">menu</a></menu>
       <div class="menu-items" v-show="isHidden">
         <router-link to="/user" class="menu-item">Profile</router-link>
         <router-link to="/account" class="menu-item">Account</router-link>
@@ -35,7 +35,7 @@ div{
   z-index: 0;
 }
 
-a{ 
+.aside-icon{ 
   padding: 0%; 
   color: white;
 }
@@ -67,6 +67,7 @@ a{
   padding: 10%;
   margin: 5%; 
   text-decoration: none;
+  color: white;
 }
 
 .menu-item:hover{
