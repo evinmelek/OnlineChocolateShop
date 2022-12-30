@@ -30,7 +30,7 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### Use and waych db.json file as fake REST API
+### Use and watch db.json file as fake REST API
 ```
 json-server --watch db.json
 ```
