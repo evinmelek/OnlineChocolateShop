@@ -31,6 +31,11 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### Use and watch db.json file as fake REST API
+### First install json-server
+```
+npm install json-server --save
+```
+### Than watch your json file
 ```
 json-server --watch db.json
 ```
